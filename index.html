@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de Contatos</title>
+    <link rel="shortcut icon" href="./images/agenda.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/agenda.png" alt="Agenda" />
+        <h1>Agenda de contatos</h1>
+      </header>
+      <form id="form-agenda">
+        <input type="text" required placeholder="Nome " id="nome-contato" />
+        <input
+          type="text"
+          required
+          placeholder="Sobrenome "
+          id="sobrenome-contato"
+        />
+        <input
+          type="text"
+          required
+          placeholder="DDD + numero"
+          id="numero-contato"
+          minlength="10"
+          maxlength="11"
+        />
+        <button type="submit">Adicionar +</button>
+      </form>
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Número</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
